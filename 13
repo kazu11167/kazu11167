@@ -1,0 +1,6 @@
+import sys
+array =[]
+for line in sys.stdin.readlines():
+    array.append(line.rstrip())
+#    print(line.rstrip())
+print(array)
