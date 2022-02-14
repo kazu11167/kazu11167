@@ -1,0 +1,5 @@
+# 標準入力から読み込んだURLを分割する
+# https://paiza.jp/cgc/users/ready
+
+url_str = input().split("/") 
+print(url_str)
