@@ -1,0 +1,11 @@
+# リストのおさらい
+enemyArray = ["スライム","モンスター","ドラゴン"]
+print(enemyArray)
+print(enemyArray[1])
+
+enemyDictionary = {"ザコ":"スライム","中ボス":"ドラゴン","らすぼす":"魔王"}
+print(enemyDictionary)
+print(enemyDictionary["中ボス"])
+
+level = "中ボス"
+print(enemyDictionary[level])
