@@ -1,0 +1,13 @@
+# 辞書の基本操作
+enemies = {"ザコ":"スライム", "中ボス":"ドラゴン", "ラスボス":"魔王"}
+print(enemies)
+print(enemies["ザコ"])
+print(len(enemies))
+
+enemies["ザコ"] = "メタルモンスター"
+print(enemies)
+print(len(enemies))
+
+del enemies["ザコ"]
+print(enemies)
+print(len(enemies))
