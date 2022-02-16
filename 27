@@ -1,0 +1,9 @@
+# リストの整列
+weapons = ["イージスソード","ウィンドスピア","アースブレーカー","イナズマハンマー"]
+print(weapons)
+
+print(sorted(weapons))
+print(sorted(weapons,reverse=True))
+
+weapons2 = ["4.イージスソード","3.ウィンドスピア","2.アースブレーカー","1.イナズマハンマー"]
+print(sorted(weapons2))
