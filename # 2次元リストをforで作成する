@@ -1,0 +1,8 @@
+
+numbers = [i * 2 for i in range(10)]
+print(numbers)
+print(len(numbers))
+
+numbers2 = [[1 for i in range(3)] for J in range(4)]
+numbers2[0][2] = 2
+print(numbers2)
