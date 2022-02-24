@@ -1,0 +1,7 @@
+# 可変長引数 - 辞書
+
+def introduce(**people):
+    for name, greeting in people.items():
+        print("私は" + name + "です。" + greeting)
+
+introduce(hero = "はじめまして", villager = "こんにちは", soldier = "よろしくお願いします")
