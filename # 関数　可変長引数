@@ -1,0 +1,7 @@
+# 可変長引数
+
+def introduce(greeting, *names):
+    for name in names:
+        print("私は" + name + "です。" + greeting)
+
+introduce("こんにちは", "勇者", "村人", "兵士")
