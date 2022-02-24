@@ -1,0 +1,7 @@
+# 引数のデフォルト値
+
+def introduce(greeting, name = "村人"):
+    print("私は" + name + "です。" + greeting)
+
+introduce("こんにちは", "勇者")
+introduce("こんにちは")
