@@ -1,0 +1,14 @@
+# 引数のデフォルト値
+#def introduce(greeting, *names):
+#    for name in  names:
+#        print("私は" + name + "です。" + greeting)
+#    
+#introduce("こんにちは", "勇者","村人","兵士","凡人")
+
+
+def introduce(**people):
+    for name, greeting in people.items():
+        print("私は" + name + "です。" + greeting)
+    print(people)
+    
+introduce(hero="初めまして", villageer="こんにちは",soldier="よろしくお願いします。")
