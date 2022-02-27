@@ -1,0 +1,6 @@
+# 標準入力とループ処理
+count = int(input())
+print("hello " + str(count))
+for i in range(count):
+    line = input().rstrip()
+    print("hello" + line)
