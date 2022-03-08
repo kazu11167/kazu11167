@@ -1,0 +1,23 @@
+readline()とループで全行を読み込む
+stdin.readline()をループで使うと一行ずつデータを読み込むことができます。
+
+import sys
+
+
+while True:
+    line = sys.stdin.readline()
+    if not len(line):
+        break
+    print(line)
+ソース: python/stdinouterr/stdinreadlineloop.py
+readline()はEOFに達すると空文字列を返します。
+ですので↑のようにlineの長さが0だったらループから抜けるようにしています。
+
+$ echo $'abc\ndef\nghi' | python stdinreadlineloop.py
+abc
+
+def
+
+ghi
+↑の出力を見てもわかるようにreadline()は行末の改行を除去しません。
+行末の改行が不要な場合はline.rstrip()などを行います。
