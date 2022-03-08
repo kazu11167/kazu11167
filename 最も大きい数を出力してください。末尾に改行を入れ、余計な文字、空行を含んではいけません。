@@ -1,0 +1,8 @@
+import sys
+input_line = input()
+# 行数を取得
+input_line = sys.stdin.readlines()
+results = []
+for item in input_line:
+    results.append(item)
+print(max(results))
