@@ -1,0 +1,16 @@
+read(1)ですべてのデータをループで読み込む
+stdin.read(1)をループで実行するとすべてのデータを1文字ずつ読み込むことができます。
+
+while True:
+    c = sys.stdin.read(1)
+    if not len(c):
+        break
+    print(c)
+ソース: python/stdinouterr/stdinreadoneloop.py
+read(1)はEOFに達した場合は空文字列を返します。
+そのため↑のようにcの長さが0になったらループから抜けるようにしています。
+
+$ echo abc | python stdinreadoneloop.py
+a
+b
+c
