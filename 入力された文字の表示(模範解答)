@@ -1,0 +1,8 @@
+n = int(input())
+a = input().split()
+for i in range(n):
+    print(a[i])
+    
+入力される文字列
+2
+1 5
