@@ -1,0 +1,45 @@
+# coding: utf-8
+# 自分の得意な言語で
+# Let's チャレンジ！！
+#import sys
+#n = int(input())
+
+#ans = "paiza"
+
+#lines = sys.stdin.readlines()
+#print(lines)
+#num = []
+#for i in range(n):
+#    num = int(input())
+#    print(num)
+
+#    ans += " paiza"
+#print(ans)
+
+
+
+#count = int(input())
+#print("hello " + str(count))
+#for i in range(count):
+#    line = input()
+#    print(line)
+    
+
+#count = int(input())
+#for i in range(count -1):
+#    i = i - 1
+#    line = str(input()).split(" ")
+#    line = input()
+#    print(line)
+#    print(i)
+#print(line[0])
+#print(line[1])
+
+
+
+count = int(input())
+for i in range(count - 1):
+   line = input().split(" ")
+#   lines = (line + "\n")
+#    print(line)
+[print(i) for i in line]
