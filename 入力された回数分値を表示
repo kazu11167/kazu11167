@@ -1,0 +1,20 @@
+入力された回数分
+次に入力された文字と数字を表示する
+数値は一を足す
+
+自分の回答
+a = int(input())
+for i in range(a):
+    b = input().split(" ")
+    s = int(b[1])
+    sum = s + 1
+    print(b[0] , sum)
+
+
+
+模範解答
+N = int(input())
+
+for _ in range(N):
+    s_a = input().split()
+    print(s_a[0], int(s_a[1]) + 1)
