@@ -1,0 +1,21 @@
+文字列の中の中から特定文字を検索し、有ればYES無ければNOを返す
+
+自分のコード
+M = input()
+R = input()
+result = M in R
+S = result
+if str(S) == "False":
+    print("NO")
+else:
+    print("YES")
+
+
+模範解答
+a = input()
+S = input()
+
+if a in S:
+    print("YES")
+else:
+    print("NO")
