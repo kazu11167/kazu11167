@@ -1,0 +1,14 @@
+入力された回数分次に入力された数字の長さをカウントし表示する
+
+N = int(input())
+for i in range(N):
+    a = len(input())
+    print(a)
+
+
+
+n = int(input())
+
+for i in range(n):
+    a = input()
+    print(len(a))
