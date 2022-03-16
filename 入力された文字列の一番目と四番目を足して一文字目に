@@ -1,0 +1,19 @@
+
+模範解答
+S = input()
+
+a = int(S[0]) + int(S[3])
+b = int(S[1]) + int(S[2])
+
+print(str(a) + str(b))
+
+
+
+自分のコード
+text = input()
+ls = list(text)
+a = int(ls[0]) + int(ls[3])
+b = int(ls[1]) + int(ls[2])
+c = str(a) + str(b)
+print(c)
+
