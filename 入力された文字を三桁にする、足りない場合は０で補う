@@ -1,0 +1,22 @@
+模範解答
+N = input()
+while len(N) < 3:
+    N = "0" + N
+print(N)
+
+
+
+
+自分の回答
+num = input()
+LEN = (len(num))
+if LEN == 1:
+    farst = "00" + num
+elif LEN == 2:
+    farst = "0" + num   
+else:
+    farst = num
+
+print(farst)
+
+
