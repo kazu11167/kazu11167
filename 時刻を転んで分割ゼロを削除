@@ -1,0 +1,6 @@
+num = input()
+h = num[:2] 
+m = num[3:]
+
+print(int(h))
+print(int(m))
