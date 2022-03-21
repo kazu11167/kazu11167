@@ -1,0 +1,19 @@
+num = input()
+#num = (str("16") + str(":") + str("31"))
+h = num[:2]
+m = num[3:]
+
+mm = int(m)+int("30")
+if mm >= 60:
+    h2 = int(h) + 1
+    m2 = int(mm) - 60
+else:
+    h2 = h
+    m2 = mm
+
+if len(str(h2)) == 1:
+    h2 = "0" + str(h2)
+if  len(str(m2)) == 1:
+    m2 = "0" + str(m2)
+
+print(str(h2) + str(":") + str(m2))
