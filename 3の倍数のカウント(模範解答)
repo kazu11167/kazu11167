@@ -1,0 +1,7 @@
+n = int(input())
+good = 0
+v = input().split(" ")
+for i in v:
+    if int(i) % int(3) == 0:
+        good = good + 1
+print(good)
