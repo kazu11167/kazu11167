@@ -1,0 +1,23 @@
+# Let's チャレンジ！！
+count = int(input())
+#value = input()
+#value = "14:38 11 24"
+for i in range(count):
+    value = input().split(" ")
+    v1 = value[0]
+    v2 = value[1]
+    v3 = value[2]
+    h = v1[:2]
+    m = v1[3:]
+    h1 = int(h) + int(v2)
+    m1 = int(m) + int(v3)
+    if m1 >= 60:
+        h1 = h1 + 1
+        m1 = m1 - 60
+    if h1 >= 24:
+        h1 = h1 -24
+    if len(str(h1)) == 1:
+        h1 = "0" + str(h1)
+    if len(str(m1)) == 1:
+        m1 = "0" + str(m1)
+    print(str(h1) + str(":") + str(m1))
