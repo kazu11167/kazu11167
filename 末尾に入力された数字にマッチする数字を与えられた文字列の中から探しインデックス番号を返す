@@ -1,0 +1,36 @@
+自分のコード
+n = int(input())
+list = []
+for i in range(n):
+    num = int(input())
+    list.append(num)
+k = input()
+if int(k) in list:
+    print(list.index(int(k)) + 1)
+
+テストコード
+#n = 5
+#list = [3,6,5,4,3,3,1]
+#for i in range(n):
+#    num = int(input())
+#    list.append(num)
+#k = 3
+#if int(k) in list:
+#    print(list.index(int(k)) + 1)
+
+
+模範解答
+
+n = int(input())
+
+a = [0] * n
+
+for i in range(n):
+    a[i] = input()
+
+k = input()
+
+for i in range(n):
+    if a[i] == k:
+        print(i + 1)
+        break
