@@ -1,0 +1,24 @@
+自分の回答(完全には動かない)
+list = []
+n = int(input())
+for i in range(n):
+    num = input()
+    list.append(num)
+if str(7) in list:
+    print("YES")
+
+
+模範解答
+n = int(input())
+
+flag = False
+
+for i in range(n):
+    a = int(input())
+    if a == 7:
+        flag = True
+
+if flag:
+    print("YES")
+else:
+    print("NO")
