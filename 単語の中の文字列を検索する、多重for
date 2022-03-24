@@ -1,0 +1,63 @@
+自分のコード
+m = int(input())
+list = []
+list1 = []
+for i in range(m):
+    v1 = input()
+    list.append(v1)
+print(list)
+n = int(input())
+for ii in range(n):
+    v2 = input()
+    list1.append(v2)
+print(list1)
+
+for iii in list:
+    for iiii in list1:
+        moji = iiii
+        if iii in iiii:
+            print("YES")
+        else:
+            print("NO")
+
+
+テストコード
+#m = int(input())
+#a = input()
+#list = ["p","a","k"]
+#list1 = []
+#count = int(input())
+
+#for i in range(count):
+#    value = input()
+#    list1.append(value)
+#print(list1)
+
+#for V in list:
+#    for i in range(count):
+#        l = list1[i]
+#        if V in l:
+#            print("Good")
+#        else:
+#            print("No")
+
+
+模範解答
+m = int(input())
+c = [""] * m
+
+for i in range(m):
+    c[i] = input()
+
+n = int(input())
+S = [""] * n
+
+for i in range(n):
+    S[i] = input()
+
+for i in range(m):
+    for j in range(n):
+        if c[i] in S[j]:
+            print("YES")
+        else:
+            print("NO")
