@@ -1,0 +1,36 @@
+自分のコード
+#list = []
+
+#for i in range(int(N)):
+#    line = input()
+#    list.append(line)
+#for i in range(len(list)):
+#    print(list[i].count(str(K)))   
+#    
+
+
+#list = ["17", "11", "10", "4", "20", "23", "6", "9", "25", "18", "10", "18", "8", "12", "20", "17", "17", "5", "19", "23", "7", "17", "23", "23", "7"]
+#number = input().split(" ")
+#A = number[0]
+#B = number[1]
+#C = number[2]
+
+#tmp = input()
+#for i in range(int(A)):
+#    line = input()
+#    list.append(line)
+#for i in range(len(list)):
+#    print(list.count(str(7)))
+
+
+
+模範解答のコード
+N, M, K = map(int,input().split())
+
+for i in range(N):
+    a = [int(j) for j in input().split()]
+    ans = 0
+    for j in range(M):
+        if a[j] == K:
+            ans += 1
+    print(ans)
