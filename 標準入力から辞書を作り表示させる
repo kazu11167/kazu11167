@@ -1,0 +1,24 @@
+自分のコード
+N = int(input())
+list = [0] * N
+for i in range(N):
+    [a, b] = [str(j) for j in input().split()]
+    list[i] = [a,b]
+name = input()
+for i in range(N):
+    [a, b] = list[i]
+    if a == name:
+        print(b)
+        
+
+模範解答
+n = int(input())
+zaisan = {}
+
+for i in range(n):
+    [s, a] = input().split()
+    zaisan[s] = a
+
+S = input()
+
+print(zaisan[S])
