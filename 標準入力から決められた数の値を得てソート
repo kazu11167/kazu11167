@@ -1,0 +1,58 @@
+自分のコード
+n = int(input())
+list = [None] * n
+for i in range(n):
+    [a, b] = input().split()
+    a = int(a)
+    b = int(b)
+#    val = input().split()
+    list[i] = [a,b]
+
+list.sort()
+for i in range(n):
+    print(*list[i])
+    
+    
+    
+n = int(input())
+list = [None] * n
+for i in range(n):
+    [a, b] = input().split()
+    a = int(a)
+    b = int(b)
+    list[i] = [b,a]
+
+list.sort()
+for i in range(n):
+    [a,b] = list[i]
+    
+    print(a,b)
+
+
+
+n = int(input())
+list = [None] * n
+for i in range(n):
+    [a, b] = [int(j) for j in input().split()]
+    list[i] = [b,a]
+
+list.sort(reverse=True)
+for i in range(n):
+    [a,b] = list[i]
+    print(b,a)
+    
+
+
+模範解答
+N = int(input())
+kingin = [0] * N
+
+for i in range(N):
+    [a, b] = [int(j) for j in input().split()]
+    kingin[i] = [b, a]
+
+kingin.sort(reverse=True)
+
+for i in range(N):
+    [a, b] = kingin[i]
+    print(b, a)
