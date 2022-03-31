@@ -1,0 +1,41 @@
+模範解答
+n = int(input())
+dmg = {}
+
+for i in range(n):
+    s = input()
+    dmg[s] = 0
+
+m = int(input())
+
+for i in range(m):
+    [p, a] = input().split()
+    a = int(a)
+    dmg[p] += a
+
+S = input()
+
+print(dmg[S])
+
+
+
+自分のコード
+
+count = int(input())
+name = [0] * count
+
+for i in range(count):
+    name[i] = input()
+count1 = int(input())
+val = [0 ] * count1
+kougeki = [0] * count1
+for ii in range(count1):
+    [n, c] = input().split()
+    val[ii] = [n, int(c)]
+S = input()
+for iii in val:
+    if iii[0] == S:
+        max = (val[0][1])+(val[1][1])
+    else:
+        print("NO")
+print(max)
