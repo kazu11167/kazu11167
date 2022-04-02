@@ -1,0 +1,45 @@
+
+模範解答
+n = int(input())
+dmg = {}
+
+for i in range(n):
+    s = input()
+    dmg[s] = 0
+
+m = int(input())
+
+for i in range(m):
+    [p, a] = input().split()
+    a = int(a)
+    dmg[p] += a
+
+names = list(dmg.keys())
+names.sort()
+
+for name in names:
+    print(dmg[name])
+
+
+
+自分のコード
+n = int(input())
+name = {}
+list = []
+for i in range(n):
+    s = input()
+    name[s] = 0
+#print(name)
+
+m = int(input())
+for i in range(m):
+    [p , d] = input().split()
+    d = int(d)
+    name[p] += d
+    dic = sorted(name.items())
+    [a,b] = dic
+#    list[a] = b
+#    list = str(dic).split(",")
+#    print(dic)
+print(a[1])
+print(b[1])
