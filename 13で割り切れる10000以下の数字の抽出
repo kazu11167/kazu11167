@@ -1,0 +1,21 @@
+
+
+
+自分のコード
+for i in range(770):
+    ans = 13 * (1 + i)
+    if ans >= 10000:
+        pass
+print(ans)
+
+模範解答
+
+n = 10000
+
+while True:
+    if n % 13 == 0:
+        break
+
+    n += 1
+
+print(n)
