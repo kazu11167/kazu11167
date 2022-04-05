@@ -1,0 +1,41 @@
+
+p =1
+k = 1
+c = 1
+n = int(input())
+[a, b] = [int(n) for n in input().split()]
+#print(n)
+#print(a)
+#print(b)
+while True:
+    if k >= n:
+        break
+    count = c + 1
+    k = p * a
+    p = p + k % b
+print(count)
+
+
+
+
+
+
+
+
+模範解答
+n = int(input())
+[a, b] = input().split()
+a, b = int(a), int(b)
+paiza = 1
+kyoko = 1
+
+times = 0
+
+while True:
+    times += 1
+    kyoko += paiza * a
+
+    if kyoko > n:
+        break
+
+    paiza += kyoko % b
