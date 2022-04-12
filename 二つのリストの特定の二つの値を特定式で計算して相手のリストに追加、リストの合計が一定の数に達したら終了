@@ -1,0 +1,40 @@
+模範解答
+H = int(input())
+# N <= 10**12
+a = [0, 1, 1]
+b = [0, 1, 1]
+dmg = 2
+i = 2
+while dmg < H:
+    a[0] = a[1]
+    a[1] = a[2]
+    b[0] = b[1]
+    b[1] = b[2]
+    a[2] = b[0] + b[1]
+    b[2] = a[0] + 2 * a[1]
+    dmg += b[2]
+    i += 1
+print(i)
+
+
+ 自分のコード
+# coding: utf-8
+dmg = int(input())
+calmdmg = []
+calpdmg = []
+calmdmg = 0
+calpdmg = 0
+pdmglst = [0,1,1]
+mdmglst = [0,1,1]
+i = 0
+num = 2
+sumplst = 0
+while sumplst < dmg:
+    calmdmg = mdmglst[i + 1] + mdmglst[i + 2] * 2
+    pdmglst.append(calmdmg)
+    calpdmg = pdmglst[i + 1] + pdmglst[i + 2]
+    mdmglst.append(calpdmg)
+    sumplst = sum(pdmglst)
+    i = i + 1
+    num = num + 1
+print(num)
